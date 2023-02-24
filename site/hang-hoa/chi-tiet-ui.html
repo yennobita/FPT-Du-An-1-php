@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="<?=$CONTENT_URL?>/css/xshop.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c30645c964.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+            <div class="thumbnail">
+                <span style="font-size: 25px; font-weight:600; padding: 5px 0px 0px 10px;"><?=$ten_hh?></span>
+            <img src='<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>' style="max-width: 95%">
+            <div class="caption">
+                <p>
+                    <ul>
+                        <!-- <li style="list-style:none;"><?=$ten_hh?></li> -->
+                        <div class="price" style="text-align:center;">
+                            <span style="color: #ee2e24; font-size: 30px; font-weight:bold; padding-right: 10px;"><?=number_format($don_gia)?>đ</span>
+                            <span style="color: #555555; font-size: 17px; font-weight:400; text-decoration: line-through; font-style: italic;"><?=number_format($giam_gia)?>đ</span>
+                            <div class="content-price"style="color: #359ce1;">
+                                <h1 style="color: #09aa36; font-size: 16px; font-weight:bold;margin-left: -165px;position: relative;">CÒN HÀNG</h1>
+                                <a href="#" style="position: absolute; margin-top: -30px;"><i class="fa-solid fa-store" style="margin-right:7px;"></i>Xem siêu thị có hàng trưng bày</a>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="group-btn">
+                        <div class="flex-item">
+
+                            <a href="#" class="btn-buyNow">
+                                <b>MUA NGAY</b>
+                                <span>Giao hàng tận nơi, không mua sao</span>
+                            </a>
+                            <a href="#" class="btn-addCart">
+                                <b>THÊM VÀO GIỎ</b>
+                                <span>Cho vào giỏ để chọn tiếp</span>
+                            </a>
+                        
+                        </div>
+                        <a href="#" class="btn-payinstall">
+                            <b>MUA TRẢ GÓP 0%</b>
+                            <span>Thủ tục online đơn giản</span>
+                        </a>
+                    </div>
+                </p>
+                <div class="mota">
+                    <span style="font-size: 20px; font-weight:600;"><?=$ten_hh?></span>
+
+                </div>
+                <div class="mta"><?= $mo_ta ?></div>
+            </div>
+        </div>
+        
+        <?php require 'binh-luan.php';?>
+        
+        <?php require 'hang-cung-loai.php';?>
+            </body>
+            </html>
